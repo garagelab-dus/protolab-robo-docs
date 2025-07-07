@@ -1,0 +1,46 @@
+{
+    "name": "MkDocs Material Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/conda:1": {
+            "version": "latest"
+        }
+        /*,
+        "ghcr.io/devcontainers/features/dotnet:2": {},
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "version": "latest"
+        }*/
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "redhat.vscode-yaml",
+                "ms-dotnettools.dotnet-interactive-vscode",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "yaml.schemas": {
+                    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+                },
+                "yaml.customTags": [
+                    "!ENV scalar",
+                    "!ENV sequence",
+                    "!relative scalar",
+                    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+                    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+                    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+                ]
+            }
+        }
+    },
+    //"postCreateCommand": "conda init bash && conda create -n mkdocs python=3.9 -y && echo 'conda activate mkdocs' >> ~/.bashrc",
+    "postCreateCommand": "conda create -n mkdocs python=3.9 -y && conda run -n mkdocs pip install mkdocs-material",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "remoteUser": "root"
+}

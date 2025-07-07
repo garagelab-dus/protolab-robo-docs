@@ -1,0 +1,47 @@
+site_name: ProtoLab Robo Docs
+site_url: https://garagelab-dus.github.io/protolab-robo-docs/
+site_description: "Das ProtoLab baut einen Roboter-Arm 'SO-Arm101'."
+site_author: GarageLab e.V.
+repo_url: https://github.com/garagelab-dus/protolab-robo-docs
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.top # "Back to top" button
+    - toc.follow  # Table of contents follows the scroll
+    - content.code.select
+    - content.code.copy
+    - navigation.tabs
+    - content.action.view
+  palette:
+    scheme: slate
+    primary: white
+    accent: yellow
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  logo: images/garagelab.png
+  favicon: images/garagelab.png
+#  favicon: images/favicon.png # create a favicon from logo
+markdown_extensions:
+  - admonition
+  - pymdownx.keys
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: True
+#  - attr_list:
+#      enabled: true
+#  - def_list
+nav:
+  - Home: 
+    - index.md
+  - Protokolle:
+    - Protokolle/Backlog.md
+    - Protokolle/ReadMe.md
+  - Tipps und Tricks:
+    - Tipps-Und-Tricks/ReadMe.md
+    - Tipps-Und-Tricks/Tipps-und-Tricks.md
+    - "Test der Umgebung": Tipps-Und-Tricks/Test-Der-Umgebung.md
