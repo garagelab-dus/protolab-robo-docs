@@ -1,6 +1,6 @@
 # Die Protokolle vom Robo-Arm
 
-## 2025-07-12 Nächstes Meeting
+## 2025-07-19 Nächstes Meeting
 
 **todo** link zum GarageLab Kalender
 
@@ -30,7 +30,7 @@ Angegeben ist der Name im Forum
 
 ### Tagesordnung
 
-1. Wir drucken nicht ohne `jenskursawe`
+#### 1. Wir drucken nicht ohne `jenskursawe`
 
 `Leader` wird in schwarz gedruckt
 `Follower` wird in orange gedruckt
@@ -42,12 +42,12 @@ Wir haben `Prusa Mini` Drucker mit Bettmaß 180 x 180 mm
 
 Wir warten auf `jenskursawe` für den Druck
 
-2. Umgang mit `github`
+#### 2. Umgang mit `github`
 
 - hinzufügen von `github`-Usern in die Organisation
 - hinzufügen von `Mitgliedern` in Team `SO-Arm101`
 
-3. Die nächsten Schritte
+#### 3. Die nächsten Schritte
 
 - Wir drucken die Arme
 - wir montieren die Arme
@@ -65,6 +65,6 @@ Wir warten auf `jenskursawe` für den Druck
 ### Call to Action
 
 - Wir haben eine To-Do-Liste im GitHub Projekt [SO-Arm101](https://github.com/orgs/garagelab-dus/projects/1) 
-- Wir posten Updates im GarageLab Forum NUR als Link
+- Wir posten Updates im `GarageLab Forum` **NUR** als Link
 
 ---
