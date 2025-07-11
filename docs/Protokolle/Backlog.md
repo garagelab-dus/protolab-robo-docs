@@ -2,7 +2,7 @@
 
 ## 2025-07-19 Nächstes Meeting
 
-**todo** link zum GarageLab Kalender
+Hier ist der Termin im [Forum-Kalender](https://forum.garage-lab.de/t/4-treffen-robotikarm-am-19-juli-von-14-00-bis-17-00-uhr/19738)
 
 ---
 
@@ -12,17 +12,7 @@
 
 ### Anwesenheit
 
-Angegeben ist der Name im Forum
-
-- [❌] [BzB](https://forum.garage-lab.de/u/BzB/summary)
-- [✅] [Felix](https://forum.garage-lab.de/u/Felix/summary)
-- [✅] [rpw](https://forum.garage-lab.de/u/rpw/summary)
-- [✅] [ovau](https://forum.garage-lab.de/u/ovau/summary)
-- [❌] [DanielH](https://forum.garage-lab.de/u/DanielH/summary)
-- [✅] [_JP](https://forum.garage-lab.de/u/_JP/summary)
-- [❌] [jenskursawe](https://forum.garage-lab.de/u/jenskursawe/summary)
-- [✅] [M2vH](https://forum.garage-lab.de/u/M2vH/summary)
-- [❌] [Steindrache](https://forum.garage-lab.de/u/Steindrache/summary)
+Ergibt sich aus dem Termin im internen Kalender.
 
 <!-- 
 - [ ] [$name](https://forum.garage-lab.de/u/{$name}/summary) 
