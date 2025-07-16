@@ -4,6 +4,35 @@
 
 Hier ist der Termin im [Forum-Kalender](https://forum.garage-lab.de/t/4-treffen-robotikarm-am-19-juli-von-14-00-bis-17-00-uhr/19738)
 
+### Tagesordnung
+
+#### 1. Namesgebung
+
+Wir wählen aus den Vorschlägen 3 Favoriten, die wir dem Verein zur Auswahl stellen.
+
+#### 2. Namen auf dem Roboter plazieren
+
+Wir wählen die geeigneten Stellen am Roboter-Arm und passen die Dateien an.
+
+#### 3. Servo-Bus-Controller mit Servo testen
+
+- Vorschlag 1
+
+    Das Repository von feetech.ch von gitee klonen.
+    Ist C++ für Linux.
+    
+- Vorschlag 2
+
+    Das lerobot repo klonen, und mit Python starten.
+
+#### Diverses
+
+Alles, was uns sonst so auf dem Herzen und der Zunge liegt
+
+#### Call-to-Action
+
+Was gibt es konkret zu erledigen.
+
 ---
 
 ## 2025-06-26 Kickoff Meeting "KI-Roboter-Arm"
