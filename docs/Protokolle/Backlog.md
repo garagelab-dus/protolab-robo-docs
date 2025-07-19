@@ -6,32 +6,67 @@ Hier ist der Termin im [Forum-Kalender](https://forum.garage-lab.de/t/4-treffen-
 
 ### Tagesordnung
 
+#### 0. Review der gedruckten Teile
+
+Wir untersuchen die einzelnen Bauteile auf `Flächen mit Funktion`. Das hat Auswirkung auf die Positionierung des Teils auf dem Druckbett.
+
+`Flächen mit Funktion` sollten NICHT gestützt werden, um einen sauberen Zusammenbau zu erreichen. 
+
+`Flächen mit Funktion` sind zum Beispiel:
+
+- Löcher zum Fixieren der Servos
+- Elemente, die einzelne Bauteile verbinden (zB für den Griff am `Leader`)
+- Aufnahmen für den Servo mit den Löchern für die Schrauben
+
+???+ info "Einstellungen für den Druck im Prusa Mini"
+
+    Die Teile wurden mit min. 3 Wänden und 25% Infill gedruckt.
+
+Im Falle einer möglichen Verbesserung stellen wir diese Bauteile in einer neuen Version zusammen, und stellen diese Teile dem `SO-Arm`-Projekt zur Verfügung.
+
 #### 1. Namesgebung
 
-Wir wählen aus den Vorschlägen 3 Favoriten, die wir dem Verein zur Auswahl stellen.
+Wir wählen aus den Vorschlägen unsere Favoriten, die wir dem Verein zur Auswahl stellen.
 
 #### 2. Namen auf dem Roboter plazieren
 
 Wir wählen die geeigneten Stellen am Roboter-Arm und passen die Dateien an.
 
-#### 3. Servo-Bus-Controller mit Servo testen
+Wir haben den `Upper_Arm` ausgewählt, weil er das größte Bauteile mit ausreichend Flächen und guter Sichtbarkeit hat.
 
-- Vorschlag 1
+#### 3. Feedback `Servo-Bus-Controller mit Servo testen`
 
-    Das Repository von feetech.ch von gitee klonen.
-    Ist C++ für Linux.
+**Verschoben auf ein späteres Meeting**
+
+- Vorschlag 1 `C++`
+
+    Das C++ Repository von feetech.ch von gitee klonen.
+    Ist C++ für Linux
+    Hat Beispielcode für alle Funktionen
     
-- Vorschlag 2
+- Vorschlag 2 `Python`
 
-    Das lerobot repo klonen, und mit Python starten.
+    Das Python Repository von gitee klonen.
+    Benötigt eine Python-Umgebung
+      - evtl. kann man den mkdocs Container nutzen
+    Hat nicht alle Funktionen im Beispielcode
 
 #### Diverses
 
+```text
 Alles, was uns sonst so auf dem Herzen und der Zunge liegt
+```
+
+Die Bauteile brauchen einiges an Nachbearbeitung. Speziell das Entfernen der Stützen ist aufwendig.
 
 #### Call-to-Action
 
+```text
 Was gibt es konkret zu erledigen.
+```
+
+- `Jens` druckt die noch fehlenden Teile mit langer Druckzeit (approx. 7h 🥴)
+- `Marco` sortiert das Repo der `.stl`-Dateien neu
 
 ---
 
