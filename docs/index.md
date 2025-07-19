@@ -1,6 +1,8 @@
-# Welcome to MkDocs
+# Welcome to ProtoLab MkDocs
 
-Hier entsteht in Kürze der ProtoLab Blog.
+[Hier geht's zum `ProtoLab Blog`](https://garagelab-dus.github.io/protolab-robo-docs/blog/)
+
+[Hier geht's zu den `Protokollen vom Robo-Arm`](https://garagelab-dus.github.io/protolab-robo-docs/Protokolle/Backlog/)
 
 ---
 
