@@ -23,8 +23,20 @@ theme:
   logo: images/garagelab.png
   favicon: images/garagelab.png
 #  favicon: images/favicon.png # create a favicon from logo
+# we have a blog plugin
+plugins:
+  - blog:
+      blog_post_author: "GarageLab e.V."
+      post_readtime_words_per_minute: 300
+
 markdown_extensions:
+  - attr_list
   - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.keys
   - codehilite:
       guess_lang: false
@@ -36,8 +48,8 @@ markdown_extensions:
 #      enabled: true
 #  - def_list
 nav:
-  - Home: 
-    - index.md
+  - Blog: 
+    - blog/index.md
   - Protokolle:
     - Protokolle/Backlog.md
     - Protokolle/ReadMe.md
