@@ -1,6 +1,21 @@
 # Die Protokolle vom Robo-Arm
 
-## 2025-07-19 Nächstes Meeting
+## Nächstes Meeting
+
+???+ info "Jetzt schon vormerken"
+
+    **3. August 2025**
+
+    ```text
+    Meeting Nr. 5
+
+    Zusammen bauen 
+    👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
+    ```
+
+Der Link zum `Termin im Forum` folgt in Kürze
+
+## 2025-07-19 Meeting Nr 4
 
 Hier ist der Termin im [Forum-Kalender](https://forum.garage-lab.de/t/4-treffen-robotikarm-am-19-juli-von-14-00-bis-17-00-uhr/19738)
 
