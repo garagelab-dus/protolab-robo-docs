@@ -18,6 +18,7 @@ Der Link zum `Termin im Forum` folgt in Kürze
 ## 2026-04-11 Meeting Nr 15
 
 Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die Anweisung für den Start der Umgebung. Hinweis: die IDs für Ernie und Bert sind bereits als Vorlage eingespeichert.
+
 - Starte das MacBook
 - Wähle User „lerobot“ aus (Passwort über Werkstattleiter)
 - Öffne das Terminal
@@ -48,13 +49,13 @@ Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die 
 - Bewege den Roboter-Follower nach den Anweisungen aus der Mittelposition in die Minimum- und die Extremposition für jeden Servo
 
 - Wenn alles kalibiert ist, starte die Teleoperation, um den Follower mit Hilfe des Leaders zu bewegen
-- lerobot-teleoperate \
+- `lerobot-teleoperate \
     --robot.type=so101_follower \
     --robot.port=$ernie \
     --robot.id=my_awesome_follower_arm \ # gib hier die ID deiner Kalibierungsdatei ein
     --teleop.type=so101_leader \
     --teleop.port=/$bert \
-    --teleop.id=my_awesome_leader_arm \ # gib hier die ID deiner Kalibierungsdatei ein
+    --teleop.id=my_awesome_leader_arm \ # gib hier die ID deiner Kalibierungsdatei ein`
 
 Wir haben eine Logitech Kamera angeschlossen und die Anweisungen unter https://huggingface.co/docs/lerobot/il_robots?teleoperate_so101=Command ausgeführt.
   
