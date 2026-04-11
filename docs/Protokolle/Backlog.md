@@ -17,39 +17,41 @@ Der Link zum `Termin im Forum` folgt in Kürze
 
 ## 2026-04-11 Meeting Nr 15
 
-Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die Anweisung für den Start der Umgebung. Hinweis: die IDs für Ernie und Bert sind bereits als Vorlage eingespeichert.
+Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die Anweisung für den Start der Umgebung. 
+*Hinweis: die IDs für Ernie und Bert sind bereits als Vorlage eingespeichert.*
 
-- Starte das MacBook
-- Wähle User „lerobot“ aus (Passwort über Werkstattleiter)
+- Starte das beiliegende MacBook
+- Wähle Benutzer „lerobot“ aus (Passwort über Werkstattleiter)
 - Öffne das Terminal
 - Du landest in der Conda Base
-- mit conda env list alle conda Umgebungen anzeigen lassen
-- Umgebung robot auswählen mit conda activate robot
-- dann das Verzeichnis /users/lerobot/repos/lerobot auswählen
+- mit `conda env list` alle conda Umgebungen anzeigen lassen
+- Umgebung robot auswählen mit `conda activate robot`
+- dann das Verzeichnis `/users/lerobot/repos/lerobot` auswählen
 - Schließe die Roboter an das Macbook an.
-- prüfe mit ls -l /dev/tty.u*
-- Er zeigt die Liste der angeschlossenen Roboter an. Er zeigt die Nummern an, die auf den Platten, auf denen die Roboter installiert sind, notiert sind.
-- Starte die Kalbibrierung mit dem Follower:
-- lerobot-calibrate lerobot-calibrate \
+- prüfe mit `ls -l /dev/tty.u*`ob sie angeschlossen sind
+- Es wird eine Liste der angeschlossenen Roboter angezeigt. Es werden die ID-Nummern angezeigt, die auf den Platten, auf denen die Roboter installiert sind, angebracht sind.
+- Starte die Kalbibrierung mit dem Follower „Ernie“:
+  `lerobot-calibrate lerobot-calibrate \
     --robot.type=so101_follower \
     --robot.port=$ernie
-    --robot.id=my_awesome_follower_arm # <- Give the robot a unique name
-- Press Enter
-- dann drücke c und Enter um die Kalibrierung zu starten
+    --robot.id=my_awesome_follower_arm # <- Give the robot a unique name`
+- Drücke Enter
+- dann drücke `c` und Enter um die Kalibrierung zu starten
 - in der Console erscheinen die Anweisungen
-- Bewege den Roboter-Follower nach den Anweisungen aus der Mittelposition in die Minimum- und die Extremposition für jeden Servo
-- Dann kalibiere den Leader:
-- lerobot-calibrate \
+- Bringe zunächst Ernie in die Mittelposition
+- Bewege jeden Servo von Ernie nach den Anweisungen aus der Mittelposition in die Minimum- und die Extremposition für 
+- Dann kalibiere den Leader „Bert“:
+  `lerobot-calibrate \
     --teleop.type=so101_leader \
     --teleop.port=$bert
-    --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
-- Press Enter
-- dann drücke c und Enter um die Kalibrierung zu starten
+    --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name`
+- Drücke Enter
+- dann drücke `c` und Enter um die Kalibrierung zu starten
 - in der Console erscheinen die Anweisungen
-- Bewege den Roboter-Follower nach den Anweisungen aus der Mittelposition in die Minimum- und die Extremposition für jeden Servo
+- Bewege jeden Servo den Roboter-Leader „Bert“ nach den Anweisungen aus der Mittelposition in die Minimum- und die Extremposition 
 
 - Wenn alles kalibiert ist, starte die Teleoperation, um den Follower mit Hilfe des Leaders zu bewegen
-- `lerobot-teleoperate \
+  `lerobot-teleoperate \
     --robot.type=so101_follower \
     --robot.port=$ernie \
     --robot.id=my_awesome_follower_arm \ # gib hier die ID deiner Kalibierungsdatei ein
@@ -57,7 +59,9 @@ Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die 
     --teleop.port=/$bert \
     --teleop.id=my_awesome_leader_arm \ # gib hier die ID deiner Kalibierungsdatei ein`
 
-Wir haben eine Logitech Kamera angeschlossen und die Anweisungen unter https://huggingface.co/docs/lerobot/il_robots?teleoperate_so101=Command ausgeführt.
+## Nächste Schritte
+Experimentiere mit angeschlossenen Kameras
+Wir haben eine Logitech Kamera angeschlossen und die Anweisungen unter https://huggingface.co/docs/lerobot/il_robots?teleoperate_so101=Command ausgeführt. Es öffnet sich eine Software, die Aufzeichnungen über die Kamera aufzeichnet: Ernie kann über Bert im Teleoperations-Modus bewegt werden. Die Bewegungen von Ernie werden über die Kamera aufgezeichnet und er kann damit trainiert werden.
   
 ## 2025-07-19 Meeting Nr 4
 
