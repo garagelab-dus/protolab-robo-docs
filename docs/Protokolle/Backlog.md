@@ -16,7 +16,7 @@
 Der Link zum `Termin im Forum` folgt in Kürze
 
 ## 2026-04-11 Meeting Nr 15
-
+### Starten der Umgebung für lerobot
 Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die Anweisung für den Start der Umgebung. 
 *Hinweis: die IDs für Ernie und Bert sind bereits als Vorlage eingespeichert.*
 
