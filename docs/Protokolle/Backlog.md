@@ -4,12 +4,12 @@
 
 ???+ info "Jetzt schon vormerken"
 
-    **3. August 2025**
+    **To be defined**
 
     ```text
-    Meeting Nr. 5
+    Meeting Nr. 16
 
-    Zusammen bauen 
+    Kamera Aufzeichnung ausprobieren 
     👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
     ```
 
