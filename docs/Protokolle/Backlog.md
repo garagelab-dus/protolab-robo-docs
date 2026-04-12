@@ -59,9 +59,13 @@ Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die 
     --teleop.port=/$bert \
     --teleop.id=my_awesome_leader_arm \ # gib hier die ID deiner Kalibierungsdatei ein`
 
+Experimentieren mit angeschlossenen Kameras.
+Wir haben eine Logitech Kamera nach [Anweisung](https://huggingface.co/docs/lerobot/cameras#setup-cameras) angeschlossen. Wir haben damit begonnen, im [Teleoperating Modus die Kameraaufzeichnung](https://huggingface.co/docs/lerobot/il_robots?teleoperate_so101=Command) zu beginnen. Es öffnet sich eine Software, die Aufzeichnungen über die Kamera aufzeichnet: Ernie kann über Bert im Teleoperations-Modus bewegt werden. Die Bewegungen von Ernie werden über die Kamera aufgezeichnet und er kann damit trainiert werden. Wir haben aber noch nicht systematisch damit begonnen, Trainingsdaten zu erstellen.
+
 ### Nächste Schritte
-Experimentiere mit angeschlossenen Kameras
-Wir haben eine Logitech Kamera angeschlossen und die Anweisungen unter https://huggingface.co/docs/lerobot/il_robots?teleoperate_so101=Command ausgeführt. Es öffnet sich eine Software, die Aufzeichnungen über die Kamera aufzeichnet: Ernie kann über Bert im Teleoperations-Modus bewegt werden. Die Bewegungen von Ernie werden über die Kamera aufgezeichnet und er kann damit trainiert werden.
+- Lernen, im Teleoperationsmodus Ernie sicher mit Bert zu steuern
+- Aufzeichnng erster Trainigsdaten und Versuch der Übertragung zu Hugging Face
+- Erstellen relevanter Trainigsdaten für eine eigenständige Programmierung von Ernie
   
 ## 2025-07-19 Meeting Nr 4
 
