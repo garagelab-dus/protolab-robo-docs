@@ -4,7 +4,7 @@
 
 ???+ info "Jetzt schon vormerken"
 
-    **To be defined**
+    **Donnerstags ab 18 Uhr im Protolab**
 
     ```text
     Meeting Nr. 16
