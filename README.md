@@ -1,6 +1,8 @@
 # Hello World
 
-Dies ist das Repository für die Dokumentation de Workshop
+Dies ist das Repository für die Dokumentation der Workshops
+
+[Die Website gibt es hier](https://garagelab-dus.github.io/protolab-robo-docs/)
 
 ## Zusammenfassung (tl;dr)
 
@@ -9,4 +11,3 @@ Dies ist das Repository für die Dokumentation de Workshop
 - Wir nutzen `mkdocs-material` als Website-Theme 
 - Wir hosten die Website auf GitHub Pages
 
-[Die Website gibt es hier](https://garagelab-dus.github.io/protolab-robo-docs/)
