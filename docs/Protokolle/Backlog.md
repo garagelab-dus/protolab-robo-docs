@@ -13,7 +13,7 @@
     👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
     ```
 
-Der Link zum `Termin im Forum` folgt in Kürze
+Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
 ## 2026-04-11 Meeting Nr 15
 ### Starten der Umgebung für lerobot
