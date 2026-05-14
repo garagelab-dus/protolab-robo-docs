@@ -15,6 +15,129 @@
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
+## 2026-04-21 Meeting Nr 16
+### Training eines ersten Modells auf dem MacBook
+Wir haben die vorhandene LeRobot-Aufzeichnung auf dem MacBook benutzt, um zum ersten Mal ein lokales Modell zu trainieren. Ziel war zunächst nicht maximale Qualität, sondern ein stabil laufendes Training auf Apple-Hardware.
+
+#### Ausgangspunkt
+
+- Es gibt bereits eine aufgezeichnete LeRobot-Datenbasis
+- Die Daten liegen lokal im LeRobot-Cache des Arbeitsverzeichnisses
+- Das Training lief **nur lokal**, also ohne Upload zu Hugging Face
+- Das Training lief auf einem MacBook mit Apple Silicon
+
+#### Start des Trainings
+
+Wir haben das Training mit folgendem Befehl gestartet:
+
+```sh
+lerobot-train \
+  --policy.type=act \
+  --policy.device=mps \
+  --policy.push_to_hub=false \
+  --policy.dim_model=128 \
+  --policy.chunk_size=20 \
+  --policy.n_action_steps=20 \
+  --dataset.repo_id=garagelab-duesseldorf/record-test-02 \
+  --wandb.enable=false \
+  --batch_size=1 \
+  --num_workers=0 \
+  --steps=40000 \
+  --log_freq=10 \
+  --save_freq=1000 \
+  --output_dir=policies/record-test-02
+```
+
+#### Warum diese Parameter auf dem MacBook wichtig waren
+
+- `--policy.type=act`
+  Wir nutzen das ACT-Modell. Das war für den ersten Versuch einfacher zu überblicken als schwerere Alternativen.
+
+- `--policy.device=mps`
+  Damit nutzt LeRobot die Apple-GPU über Metal. Ohne diesen Parameter würde das Training deutlich langsamer oder unnötig auf der CPU laufen.
+
+- `--policy.push_to_hub=false`
+  Verhindert, dass das trainierte Modell zu Hugging Face hochgeladen wird. Für unseren Versuch sollte alles lokal bleiben.
+
+- `--policy.dim_model=128`
+  Das ist kleiner als die großen Standardwerte und reduziert Rechenlast und Speicherbedarf deutlich. `128` war ein brauchbarer Kompromiss: klein genug für das MacBook, aber groß genug für ein ernsthaftes Training.
+
+- `--policy.chunk_size=20`
+  Das Modell sagt immer 20 Aktionen auf einmal voraus. Ein kleinerer Wert macht das Training deutlich leichter als die Default-Konfiguration.
+
+- `--policy.n_action_steps=20`
+  Passt hier zum `chunk_size`. Das Modell arbeitet also mit 20er Action-Blöcken und bleibt damit in einer einfachen, gut nachvollziehbaren Konfiguration.
+
+- `--dataset.repo_id=garagelab-duesseldorf/record-test-02`
+  Damit wird das lokale, bereits vorhandene Datenset ausgewählt.
+
+- `--wandb.enable=false`
+  Wir haben kein Weights & Biases benutzt. Für den ersten Lauf reichten uns Terminal-Logs und Checkpoints.
+
+- `--batch_size=1`
+  Das war wichtig für den Speicherbedarf. Mit größerer Batch Size wäre das MacBook deutlich schneller an seine Grenzen gekommen.
+
+- `--num_workers=0`
+  Keine zusätzlichen DataLoader-Prozesse. Das spart RAM. Gerade auf dem MacBook war das wichtig, weil sonst schnell zu viel Speicher belegt wird.
+
+- `--steps=40000`
+  Wir haben die Schrittzahl so gewählt, dass das Training ungefähr in eine längere Laptop-Session passt. Das ergab in der Praxis ungefähr 10 Stunden Laufzeit.
+
+- `--log_freq=10`
+  Alle 10 Schritte wird ein Zwischenstand ausgegeben. So kann man sehen, ob das Training läuft oder hängt.
+
+- `--save_freq=1000`
+  Alle 1000 Schritte wird ein Checkpoint gespeichert. Das ist wichtig, um später ältere Stände zu vergleichen oder bei Bedarf fortzusetzen.
+
+- `--output_dir=policies/record-test-02`
+  Hier landen die Checkpoints und die Trainingskonfiguration.
+
+#### Beobachtungen beim Training
+
+Mit den anfänglichen Default-Werten war das Training auf dem MacBook zu langsam und zu schwergewichtig. Mit der kleineren Konfiguration lief es stabil.
+
+Ein typischer Stand während des Trainings sah etwa so aus:
+
+```text
+step:40K smpl:40K ep:22 epch:4.45 loss:0.088 grdn:19.369 lr:1.0e-05 updt_s:0.864 data_s:0.068
+```
+
+Wichtig daran:
+
+- `loss:0.088` zeigt, dass das Modell etwas gelernt hat
+- `epch:4.45` bedeutet ungefähr 4,45 Durchläufe durch die Daten
+- `updt_s:0.864` zeigt die Rechenzeit pro Trainingsschritt
+- `data_s:0.068` zeigt, dass die Datenzufuhr nicht das Hauptproblem war
+
+#### Ergebnis
+
+Nach dem Training liegt ein fertiges Modell im Ausgabeordner, zum Beispiel hier:
+
+```text
+policies/record-test-02/checkpoints/040000/pretrained_model
+```
+
+Dieses Modell kann anschließend für Inferenz mit dem Roboter benutzt werden.
+
+### Nächste Schritte
+- Ein oder mehrere Checkpoints am echten Roboter testen
+- Beispiel für einen ersten Inferenz-Lauf mit einem trainierten Checkpoint:
+  ```sh
+  lerobot-record \
+    --robot.type=${ernie_type} \
+    --robot.port=${ernie_port} \
+    --robot.id=${ernie_id} \
+    --policy.path=policies/record-test-02/checkpoints/040000/pretrained_model \
+    --policy.device=mps \
+    --dataset.repo_id=garagelab-duesseldorf/eval-record-test-02 \
+    --dataset.push_to_hub=false \
+    --dataset.num_episodes=5 \
+    --dataset.single_task="Test des trainierten Modells mit Ernie"
+  ```
+- Evaluationsläufe getrennt von den Trainingsdaten aufzeichnen
+- Prüfen, ob 20k / 30k / 40k Schritte einen merklichen Unterschied machen
+- Später bessere oder vielfältigere Trainingsdaten aufnehmen
+
 ## 2026-04-11 Meeting Nr 15
 ### Starten der Umgebung für lerobot
 Wir haben die Lerobot-Umgebung auf eines unserer Macbook Air gespielt. Hier die Anweisung für den Start der Umgebung. 
