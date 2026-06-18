@@ -38,6 +38,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - codehilite:
       guess_lang: false
   - footnotes
