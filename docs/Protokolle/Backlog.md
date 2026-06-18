@@ -15,6 +15,22 @@
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
+## 2026-6-18
+### Checkliste zum Starten von Ernie und Bert
+
+- [ ] Kameradeckel abgemacht
+- [ ] Strom Lichtleiste
+- [ ] USB Hub mit Mac verbinden
+- [ ] Roboter USB Hub
+- [ ] Overshoulder Kamera
+- [ ] USB Roboter Bert
+- [ ] Strom Roboter Bert
+- [ ] Strom Netzteil eingeschaltet
+- [ ] Kamera Roboter Ernie
+- [ ] USB Roboter Ernie
+- [ ] Strom Netzteil eingeschaltet
+- [ ] Strom Roboter Ernie
+
 ## 2026-04-21 Meeting Nr 16
 ### Training eines ersten Modells auf dem MacBook
 Wir haben die vorhandene LeRobot-Aufzeichnung auf dem MacBook benutzt, um zum ersten Mal ein lokales Modell zu trainieren. Ziel war zunächst nicht maximale Qualität, sondern ein stabil laufendes Training auf Apple-Hardware.
