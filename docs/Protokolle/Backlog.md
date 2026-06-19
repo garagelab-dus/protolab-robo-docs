@@ -27,7 +27,6 @@ Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-worksh
 - [ ] Strom Netzteil eingeschaltet
 - [ ] Kamera Roboter Ernie
 - [ ] USB Roboter Ernie
-- [ ] Strom Netzteil eingeschaltet
 - [ ] Strom Roboter Ernie
 
 ## 2026-04-21 Meeting Nr 16
