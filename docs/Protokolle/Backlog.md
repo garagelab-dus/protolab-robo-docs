@@ -15,6 +15,16 @@
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
+##2026-7-02
+### Shell Befehle zum Starten einer Session mit lerobot
+Wir haben verschiedene Scripte vorbereitet, damit das starten einer Session mit lerobot schneller geht.
+- run_a_teleoperation.sh
+startet den Teleoperationsmodus; startet das Programm rerun.io;
+- run_a_trainig.sh
+startet den Trainingsmodus.
+- run_a_policy.sh
+  startet eine Policy Session.
+
 ## 2026-6-18
 ### Checkliste zum Starten von Ernie und Bert
 - [ ] Kameradeckel abgemacht
