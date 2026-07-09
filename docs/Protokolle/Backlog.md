@@ -19,7 +19,7 @@ Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-worksh
 
 ```zsh
 # run in terminal
-./run_a_teleop.sh
+./run_a_teleop.sh --type $ernie_type
 ```
 
 wait for update
