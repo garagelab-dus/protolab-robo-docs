@@ -7,15 +7,25 @@
     **Donnerstags ab 18 Uhr im Protolab**
 
     ```text
-    Meeting Nr. 16
+    Nächstes Meeting: Nr. 30
 
-    Kamera Aufzeichnung ausprobieren 
+    Endlich mal was mit KI 
     👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
     ```
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
-##2026-7-02
+## 2026-07-09
+
+```zsh
+# run in terminal
+./run_a_teleop.sh
+```
+
+wait for update
+
+## 2026-7-02
+
 ### Shell Befehle zum Starten einer Session mit lerobot
 Wir haben verschiedene Scripte vorbereitet, damit das starten einer Session mit lerobot schneller geht.
 - *run_a_teleoperation.sh* startet den Teleoperationsmodus; startet das Programm rerun.io;
