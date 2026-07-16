@@ -7,9 +7,11 @@
     **Donnerstags ab 18 Uhr im Protolab**
 
     ```text
-    Nächstes Meeting: Nr. 30
+    Nächstes Meeting: Nr. 31
 
     Endlich mal was mit KI 
+    Und vielleicht nicht ganz so warm
+    
     👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
     ```
 
