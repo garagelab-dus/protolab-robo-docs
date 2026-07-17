@@ -17,6 +17,48 @@
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
+---
+## 2026-07-17
+
+### Recording 5 more episodes
+
+```bash
+export repo_id="multi_episode"
+export task_name="pap_green_foam_in_box"
+cd $repo_ernie/scripts/
+./run_a_recording_next_5_episodes.sh
+
+# recording episode 10..14
+```
+
+???+ info "Aufnahme mit 30 fps"
+
+    **ohne externen Monitor**
+
+    **ohne USB-C Hub**
+
+    ```text
+    Jeden Controller direkt in einen USB-C am MacBook
+    ```
+
+---
+
+### Test: Einen Link zum Blog
+
+Hardlink: 
+
+- open post in browsser
+- copy url
+- insert url in markdown
+
+```txt
+Normaler Text [Linktext](url)
+```
+
+Hier ein Link zum Blogpost [How to visualize a recording](https://garagelab-dus.github.io/protolab-robo-docs/blog/2026/07/16/how-to-visualise-a-recording/)
+
+
+
 ## 2026-07-09
 
 ```zsh
