@@ -21,7 +21,7 @@ Auflösung der Kameras: 320x240 Pixel, 30 FPS
 
 Screenshot:
 
-![screenshot rerun app](https://garagelab-dus.github.io/protolab-robo-docs/blog/images/teleoperation_320x240_30fps.png)
+![screenshot rerun app](https://garagelab-dus.github.io/protolab-robo-docs/blog/images/minimum-cam-resolution-1.png)
 
 ???- info "Teleop loop time: 33.34ms (30 Hz)"
 
