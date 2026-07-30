@@ -7,20 +7,38 @@
     **Donnerstags ab 18 Uhr im Protolab**
 
     ```text
-    Nächstes Meeting: Nr. 31
+    Nächstes Meeting: Nr. 32
 
-    Endlich mal was mit KI 
-    Und vielleicht nicht ganz so warm
+    wir haben ein dataset auf huggingface hochgeladen
+    und wollen es im Workshop trainieren. 
     
-    👩‍🔧👩🏽‍🔧 🤖🦾 👨‍🔧👨‍🔧
+    👩‍🔧👩🏽‍🔧 🦾🤖 👨‍🔧👨‍🔧
     ```
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
 
 ---
 ## 2026-07-30
+
+Wir haben darüber nachgedacht, wie wir den Auf- und Abbau beschleunigen können.
+
+UND:
+
 ### Recording Episodes 15 bis 50
-Wir haben darüber nachgedacht, wie wir den Au- und Abbau beschleunigen können.
+
+```bash
+hf upload ${HF_USER}/${dataset_name} $recording_local --repo-type dataset 
+
+# Found 48 files to upload
+#   Preparing   ████████████████████  48 / 48 ✓
+#   Uploading   ████████████████████  45 / 45 files  2.04GB · 1.19MB/s ✓
+#   Committing  ████████████████████  48 / 48 ✓
+# ✓ Uploaded
+#   url: https://huggingface.co/datasets/garagelab-duesseldorf/pap_green_foam_in_box/commit/3ede4b5b783059312249fa7c0ffd7417328960d9
+
+echo $HF_USER
+# garagelab-duesseldorf
+```
 
 ---
 ## 2026-07-17
