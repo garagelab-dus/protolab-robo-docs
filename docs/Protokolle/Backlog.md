@@ -12,10 +12,21 @@
     wir haben ein dataset auf huggingface hochgeladen
     und wollen es im Workshop trainieren. 
     
-    👩‍🔧👩🏽‍🔧 🦾🤖 👨‍🔧👨‍🔧
+    🫵🦝🫳🟩🦾🤖  👨‍🙏👨‍🔧
     ```
 
 Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-workshop-donnerstag/22493) 
+
+---
+## 2026-08-02
+
+- Training eines ACT-Modell mit unserem Datensatz auf `Google Colab`
+    - Im [`ernie-und-bert` repo](https://github.com/garagelab-dus/ernie-und-bert/tree/main/notebooks) liegen die `notebooks`
+- Wir müssen beim Upload der `Recordings` einen `tag='v3.0'` setzen.
+    - das Dataset muss mit der Version `getagt` sein, damit `lerobot-train` den Datensatz herunterlädt.
+- Vielleicht ist es Zeit, die Arbeit im `GitHub Projekt` zu koordinieren?
+
+
 
 ---
 ## 2026-07-30
