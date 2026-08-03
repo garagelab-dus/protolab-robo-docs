@@ -22,11 +22,12 @@ theme:
     code: Ubuntu Mono
   logo: images/garagelab.png
   favicon: images/garagelab.png
-#  favicon: images/favicon.png # create a favicon from logo
+#  favicon: images/favicon.png 
+# create a favicon from logo
 # we have a blog plugin
 plugins:
   - blog:
-      blog_post_author: "GarageLab e.V."
+      blog_toc: true
       post_readtime_words_per_minute: 300
 
 markdown_extensions:
