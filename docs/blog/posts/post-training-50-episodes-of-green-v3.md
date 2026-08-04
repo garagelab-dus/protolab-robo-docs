@@ -1,6 +1,7 @@
 ---
 title: "Training 50 episodes of green foam in box"
 date: 2026-08-03
+authors: [m2vh]
 ---
 
 We did a training on our first dataset.
@@ -194,6 +195,7 @@ INFO 2026-08-02 15:43:39 ot_train.py:272
 }
 ```
 
+```txt
 INFO 2026-08-02 15:43:39 ot_train.py:280 Logs will be saved locally.
 INFO 2026-08-02 15:43:39 ot_train.py:298 Creating dataset
 
@@ -206,6 +208,7 @@ INFO 2026-08-02 15:43:40 ot_train.py:443 dataset.num_episodes=52
 INFO 2026-08-02 15:43:40 ot_train.py:446 Effective batch size: 8 x 1 = 8
 INFO 2026-08-02 15:43:40 ot_train.py:447 num_learnable_params=51597190 (52M)
 INFO 2026-08-02 15:43:40 ot_train.py:448 num_total_params=51597190 (52M)
+```
 
 ### Training sequence
 

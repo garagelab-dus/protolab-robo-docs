@@ -27,6 +27,8 @@ theme:
 # we have a blog plugin
 plugins:
   - blog:
+      authors: true
+      authors_file: blog/.authors.yml
       blog_toc: true
       post_readtime_words_per_minute: 300
 
