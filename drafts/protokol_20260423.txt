@@ -1,0 +1,16 @@
+  893  uv pip install 'lerobot[dataset]\n'
+  894  ./run_a_policy.sh
+  895   uv pip install 'lerobot[viz]'
+  896  ./run_a_policy.sh
+  897  uv pip install 'lerobot[feetech]'
+  898  ./run_a_policy.sh
+  899  ./run_a_policy.sh
+  900  ./run_a_policy.sh
+  901  echo ${HF_USER}
+  902  echo $HF_USER
+  903  ./run_a_policy.sh
+  904  ./run_a_policy.sh
+  905  ./run_a_policy.sh
+  906  ./run_a_policy.sh
+  907  ./run_a_policy.sh
+  908  ./run_a_policy.sh

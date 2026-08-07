@@ -1,0 +1,1411 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Das ProtoLab baut einen Roboter-Arm 'SO-Arm101'.">
+      
+      
+        <meta name="author" content="GarageLab e.V.">
+      
+      
+        <link rel="canonical" href="https://garagelab-dus.github.io/protolab-robo-docs/blog/">
+      
+      
+      
+        <link rel="next" href="archive/2026/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/garagelab.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Willkommen im ProtoLab - ProtoLab Robo Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#willkommen-im-protolab" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ProtoLab Robo Docs" class="md-header__button md-logo" aria-label="ProtoLab Robo Docs" data-md-component="logo">
+      
+  <img src="../images/garagelab.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ProtoLab Robo Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Willkommen im ProtoLab
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/garagelab-dus/protolab-robo-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Protokolle/Backlog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Protokolle
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Tipps-Und-Tricks/ReadMe/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tipps und Tricks
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ProtoLab Robo Docs" class="md-nav__button md-logo" aria-label="ProtoLab Robo Docs" data-md-component="logo">
+      
+  <img src="../images/garagelab.png" alt="logo">
+
+    </a>
+    ProtoLab Robo Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/garagelab-dus/protolab-robo-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protokolle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Protokolle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Protokolle/Backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Die Protokolle vom Robo-Arm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Protokolle/ReadMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How-to Protokoll
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tipps und Tricks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tipps und Tricks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tipps-Und-Tricks/ReadMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ReadMe.md - Lies Mich!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tipps-Und-Tricks/Tipps-und-Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Terminal Nutzer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tipps-Und-Tricks/Test-Der-Umgebung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test der Umgebung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#training-50-episodes-of-green-foam-in-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training 50 episodes of green foam in box
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-camera-resolution-for-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimum Camera Resolution for Teleoperation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-visualise-a-recording" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        how to visualise a recording
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this-is-a-demo-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        This is a demo post
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="willkommen-im-protolab">Willkommen im ProtoLab<a class="headerlink" href="#willkommen-im-protolab" title="Permanent link">&para;</a></h1>
+<p><img alt="header image" src="images/ProtoLab.jpg" /></p>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/11768801?s=400&u=fe4579731627e22deec01e24b9e09b1a4d4dd011&v=4" alt="M2vH">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-08-03 00:00:00+00:00">August 3, 2026</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              24 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="training-50-episodes-of-green-foam-in-box"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/">Training 50 episodes of green foam in box</a></h2>
+<p>We did a training on our first dataset.</p>
+<p>Training was run in Google Colab using a jupyther notebook</p>
+<p>Runtime was <code>free of charge</code></p>
+<ul>
+<li>RAM 16 GB</li>
+<li>VRAM 16 GB on a T4 GPU</li>
+</ul>
+<p>Free runtime alows <code>2</code> workers running</p>
+<p>Sending a <code>batch_size=8</code> consumed 4.5 GB of VRAM</p>
+<p>We saved <code>checkpoints</code> after each 1K of steps</p>
+<p>We uploaded <code>checkpoints</code> to huggingface hub</p>
+<p>We trained <code>20K</code> steps</p>
+<p>Model pushed to huggingface: <a href="https://huggingface.co/garagelab-duesseldorf/pap_green_foam_in_boxpolicy-v3">pap_green_foam_in_boxpolicy-v3</a></p>
+<hr />
+<h3 id="variables"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/#variables">Variables</a></h3>
+<div class="highlight"><pre><span></span><code>output_dir:<span class="w"> </span>outputs/train/pap_green_foam_in_box-v3
+hf_user:<span class="w"> </span>garagelab-duesseldorf
+dataset_name:<span class="w"> </span>pap_green_foam_in_box
+job_name:<span class="w"> </span>pap_green_foam_in_box
+dataset_repo_id:<span class="w"> </span>garagelab-duesseldorf/pap_green_foam_in_box
+policy_repo_id:<span class="w"> </span>garagelab-duesseldorf/pap_green_foam_in_boxpolicy-v3
+</code></pre></div>
+<h3 id="command"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/#command">Command</a></h3>
+<div class="highlight"><pre><span></span><code>!lerobot-train \
+  --dataset.repo_id=&#39;{dataset_repo_id}&#39; \
+  --policy.type=act \
+  --output_dir=&#39;{output_dir}&#39; \
+  --job_name=&#39;{job_name}&#39; \
+  --policy.device=cuda \
+  --wandb.enable=False \
+  --policy.repo_id=&#39;{policy_repo_id}&#39; \
+  --num_workers=2 \
+  --batch_size=8 \
+  --save_checkpoint_to_hub=true \
+  --save_freq=1000 \
+  --steps=20000
+</code></pre></div>
+<h3 id="output"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/#output">Output</a></h3>
+<p>INFO 2026-08-02 15:43:39 ot_train.py:272 </p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">&#39;ba</span><span class="kc">t</span><span class="err">ch_size&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;checkpoi</span><span class="kc">nt</span><span class="err">_pa</span><span class="kc">t</span><span class="err">h&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;cud</span><span class="kc">nn</span><span class="err">_de</span><span class="kc">ter</span><span class="err">mi</span><span class="kc">n</span><span class="err">is</span><span class="kc">t</span><span class="err">ic&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;da</span><span class="kc">tal</span><span class="err">oader_mul</span><span class="kc">t</span><span class="err">iprocessi</span><span class="kc">n</span><span class="err">g_co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;spaw</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;da</span><span class="kc">taset</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;dep</span><span class="kc">t</span><span class="err">h_ou</span><span class="kc">t</span><span class="err">pu</span><span class="kc">t</span><span class="err">_u</span><span class="kc">n</span><span class="err">i</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;mm&#39;</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;episodes&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;eval_spli</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;image_</span><span class="kc">transf</span><span class="err">orms&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;e</span><span class="kc">na</span><span class="err">ble&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">                                  </span><span class="err">&#39;max_</span><span class="kc">nu</span><span class="err">m_</span><span class="kc">transf</span><span class="err">orms&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                                  </span><span class="err">&#39;ra</span><span class="kc">n</span><span class="err">dom_order&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">                                  </span><span class="err">&#39;</span><span class="kc">tfs</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;a</span><span class="kc">ff</span><span class="err">i</span><span class="kc">ne</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;degrees&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-5.0</span><span class="p">,</span>
+<span class="w">                                                                            </span><span class="mf">5.0</span><span class="p">],</span>
+<span class="w">                                                                </span><span class="err">&#39;</span><span class="kc">translate</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.05</span><span class="p">,</span>
+<span class="w">                                                                              </span><span class="mf">0.05</span><span class="p">]},</span>
+<span class="w">                                                     </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Ra</span><span class="kc">n</span><span class="err">domA</span><span class="kc">ff</span><span class="err">i</span><span class="kc">ne</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                     </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">                                          </span><span class="err">&#39;brigh</span><span class="kc">tness</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;brigh</span><span class="kc">tness</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.8</span><span class="p">,</span>
+<span class="w">                                                                                   </span><span class="mf">1.2</span><span class="p">]},</span>
+<span class="w">                                                         </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ColorJi</span><span class="kc">tter</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                         </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">                                          </span><span class="err">&#39;co</span><span class="kc">ntrast</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;co</span><span class="kc">ntrast</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.8</span><span class="p">,</span>
+<span class="w">                                                                               </span><span class="mf">1.2</span><span class="p">]},</span>
+<span class="w">                                                       </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ColorJi</span><span class="kc">tter</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                       </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">                                          </span><span class="err">&#39;hue&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;hue&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-0.05</span><span class="p">,</span>
+<span class="w">                                                                     </span><span class="mf">0.05</span><span class="p">]},</span>
+<span class="w">                                                  </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ColorJi</span><span class="kc">tter</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                  </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">                                          </span><span class="err">&#39;sa</span><span class="kc">turat</span><span class="err">io</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;sa</span><span class="kc">turat</span><span class="err">io</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span>
+<span class="w">                                                                                   </span><span class="mf">1.5</span><span class="p">]},</span>
+<span class="w">                                                         </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ColorJi</span><span class="kc">tter</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                         </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">                                          </span><span class="err">&#39;sharp</span><span class="kc">ness</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;kwargs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;sharp</span><span class="kc">ness</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span>
+<span class="w">                                                                                 </span><span class="mf">1.5</span><span class="p">]},</span>
+<span class="w">                                                        </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Sharp</span><span class="kc">ness</span><span class="err">Ji</span><span class="kc">tter</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">                                                        </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">}}},</span>
+<span class="w">             </span><span class="err">&#39;repo_id&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;garagelab</span><span class="mi">-</span><span class="err">duesseldor</span><span class="kc">f</span><span class="err">/pap_gree</span><span class="kc">n</span><span class="err">_</span><span class="kc">f</span><span class="err">oam_i</span><span class="kc">n</span><span class="err">_box&#39;</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;re</span><span class="kc">turn</span><span class="err">_ui</span><span class="kc">nt</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;revisio</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;roo</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;s</span><span class="kc">trea</span><span class="err">mi</span><span class="kc">n</span><span class="err">g&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;use_image</span><span class="kc">net</span><span class="err">_s</span><span class="kc">tats</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">             </span><span class="err">&#39;video_backe</span><span class="kc">n</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">orchcodec&#39;</span><span class="p">},</span>
+<span class="w"> </span><span class="err">&#39;e</span><span class="kc">n</span><span class="err">v&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;e</span><span class="kc">n</span><span class="err">v_eval_</span><span class="kc">fre</span><span class="err">q&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;eval&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;ba</span><span class="kc">t</span><span class="err">ch_size&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">          </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_episodes&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+<span class="w">          </span><span class="err">&#39;recordi</span><span class="kc">n</span><span class="err">g&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">          </span><span class="err">&#39;recordi</span><span class="kc">n</span><span class="err">g_priva</span><span class="kc">te</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">          </span><span class="err">&#39;recordi</span><span class="kc">n</span><span class="err">g_repo_id&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">          </span><span class="err">&#39;use_asy</span><span class="kc">n</span><span class="err">c_e</span><span class="kc">n</span><span class="err">vs&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">},</span>
+<span class="w"> </span><span class="err">&#39;eval_s</span><span class="kc">te</span><span class="err">ps&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;job&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;de</span><span class="kc">ta</span><span class="err">ch&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">         </span><span class="err">&#39;image&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;huggi</span><span class="kc">n</span><span class="err">g</span><span class="kc">fa</span><span class="err">ce/lerobo</span><span class="kc">t</span><span class="mi">-</span><span class="err">gpu</span><span class="p">:</span><span class="err">la</span><span class="kc">test</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">         </span><span class="err">&#39;</span><span class="kc">ta</span><span class="err">gs&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">         </span><span class="err">&#39;</span><span class="kc">tar</span><span class="err">ge</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">         </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">imeou</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">2</span><span class="err">d&#39;</span><span class="p">},</span>
+<span class="w"> </span><span class="err">&#39;job_</span><span class="kc">na</span><span class="err">me&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;pap_gree</span><span class="kc">n</span><span class="err">_</span><span class="kc">f</span><span class="err">oam_i</span><span class="kc">n</span><span class="err">_box&#39;</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;log_</span><span class="kc">fre</span><span class="err">q&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;max_eval_samples&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;</span><span class="kc">nu</span><span class="err">m_workers&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;op</span><span class="kc">t</span><span class="err">imizer&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;be</span><span class="kc">tas</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.9</span><span class="p">,</span><span class="w"> </span><span class="mf">0.999</span><span class="p">],</span>
+<span class="w">               </span><span class="err">&#39;eps&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-08</span><span class="p">,</span>
+<span class="w">               </span><span class="err">&#39;grad_clip_</span><span class="kc">n</span><span class="err">orm&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span>
+<span class="w">               </span><span class="err">&#39;lr&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-05</span><span class="p">,</span>
+<span class="w">               </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;adamw&#39;</span><span class="p">,</span>
+<span class="w">               </span><span class="err">&#39;weigh</span><span class="kc">t</span><span class="err">_decay&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">},</span>
+<span class="w"> </span><span class="err">&#39;ou</span><span class="kc">t</span><span class="err">pu</span><span class="kc">t</span><span class="err">_dir&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ou</span><span class="kc">t</span><span class="err">pu</span><span class="kc">ts</span><span class="err">/</span><span class="kc">tra</span><span class="err">i</span><span class="kc">n</span><span class="err">/pap_gree</span><span class="kc">n</span><span class="err">_</span><span class="kc">f</span><span class="err">oam_i</span><span class="kc">n</span><span class="err">_box</span><span class="mi">-</span><span class="err">v</span><span class="mi">3</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;pe</span><span class="kc">ft</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;persis</span><span class="kc">tent</span><span class="err">_workers&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;policy&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;chu</span><span class="kc">n</span><span class="err">k_size&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;device&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;cuda&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;dim_</span><span class="kc">fee</span><span class="err">d</span><span class="kc">f</span><span class="err">orward&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">3200</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;dim_model&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">512</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;dropou</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">fee</span><span class="err">d</span><span class="kc">f</span><span class="err">orward_ac</span><span class="kc">t</span><span class="err">iva</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;relu&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;i</span><span class="kc">n</span><span class="err">pu</span><span class="kc">t</span><span class="err">_</span><span class="kc">features</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">            </span><span class="err">&#39;kl_weigh</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;la</span><span class="kc">tent</span><span class="err">_dim&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;lice</span><span class="kc">nse</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_ac</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">_s</span><span class="kc">te</span><span class="err">ps&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_decoder_layers&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_e</span><span class="kc">n</span><span class="err">coder_layers&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_heads&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_obs_s</span><span class="kc">te</span><span class="err">ps&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">_vae_e</span><span class="kc">n</span><span class="err">coder_layers&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">ormaliza</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">_mappi</span><span class="kc">n</span><span class="err">g&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;ACTION&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&lt;Normaliza</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Mode.MEAN_STD</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;MEAN_STD&#39;&gt;</span><span class="p">,</span>
+<span class="w">                                      </span><span class="err">&#39;STATE&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&lt;Normaliza</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Mode.MEAN_STD</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;MEAN_STD&#39;&gt;</span><span class="p">,</span>
+<span class="w">                                      </span><span class="err">&#39;VISUAL&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&lt;Normaliza</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Mode.MEAN_STD</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;MEAN_STD&#39;&gt;</span><span class="p">},</span>
+<span class="w">            </span><span class="err">&#39;op</span><span class="kc">t</span><span class="err">imizer_lr&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-05</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;op</span><span class="kc">t</span><span class="err">imizer_lr_backbo</span><span class="kc">ne</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e-05</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;op</span><span class="kc">t</span><span class="err">imizer_weigh</span><span class="kc">t</span><span class="err">_decay&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;ou</span><span class="kc">t</span><span class="err">pu</span><span class="kc">t</span><span class="err">_</span><span class="kc">features</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">            </span><span class="err">&#39;pre_</span><span class="kc">n</span><span class="err">orm&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;pre</span><span class="kc">tra</span><span class="err">i</span><span class="kc">ne</span><span class="err">d_backbo</span><span class="kc">ne</span><span class="err">_weigh</span><span class="kc">ts</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ResNe</span><span class="kc">t</span><span class="mi">18</span><span class="err">_Weigh</span><span class="kc">ts</span><span class="err">.IMAGENET</span><span class="mi">1</span><span class="err">K_V</span><span class="mi">1</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;pre</span><span class="kc">tra</span><span class="err">i</span><span class="kc">ne</span><span class="err">d_pa</span><span class="kc">t</span><span class="err">h&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;pre</span><span class="kc">tra</span><span class="err">i</span><span class="kc">ne</span><span class="err">d_revisio</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;priva</span><span class="kc">te</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;push_</span><span class="kc">t</span><span class="err">o_hub&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;replace_</span><span class="kc">f</span><span class="err">i</span><span class="kc">nal</span><span class="err">_s</span><span class="kc">tr</span><span class="err">ide_wi</span><span class="kc">t</span><span class="err">h_dila</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;repo_id&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;garagelab</span><span class="mi">-</span><span class="err">duesseldor</span><span class="kc">f</span><span class="err">/pap_gree</span><span class="kc">n</span><span class="err">_</span><span class="kc">f</span><span class="err">oam_i</span><span class="kc">n</span><span class="err">_boxpolicy</span><span class="mi">-</span><span class="err">v</span><span class="mi">3</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">ta</span><span class="err">gs&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">te</span><span class="err">mporal_e</span><span class="kc">nse</span><span class="err">mble_coe</span><span class="kc">ff</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">ype&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;ac</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;use_amp&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;use_pe</span><span class="kc">ft</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;use_vae&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">            </span><span class="err">&#39;visio</span><span class="kc">n</span><span class="err">_backbo</span><span class="kc">ne</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;res</span><span class="kc">net</span><span class="mi">18</span><span class="err">&#39;</span><span class="p">},</span>
+<span class="w"> </span><span class="err">&#39;pre</span><span class="kc">fet</span><span class="err">ch_</span><span class="kc">fa</span><span class="err">c</span><span class="kc">t</span><span class="err">or&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;re</span><span class="kc">na</span><span class="err">me_map&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w"> </span><span class="err">&#39;resume&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;reward_model&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;sample_weigh</span><span class="kc">t</span><span class="err">i</span><span class="kc">n</span><span class="err">g&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;save_checkpoi</span><span class="kc">nt</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;save_checkpoi</span><span class="kc">nt</span><span class="err">_</span><span class="kc">t</span><span class="err">o_hub&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;save_</span><span class="kc">fre</span><span class="err">q&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;scheduler&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;seed&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;s</span><span class="kc">te</span><span class="err">ps&#39;</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;</span><span class="kc">t</span><span class="err">olera</span><span class="kc">n</span><span class="err">ce_s&#39;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0001</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;use_policy_</span><span class="kc">tra</span><span class="err">i</span><span class="kc">n</span><span class="err">i</span><span class="kc">n</span><span class="err">g_prese</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w"> </span><span class="err">&#39;wa</span><span class="kc">n</span><span class="err">db&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">&#39;add_</span><span class="kc">ta</span><span class="err">gs&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;disable_ar</span><span class="kc">t</span><span class="err">i</span><span class="kc">fa</span><span class="err">c</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;e</span><span class="kc">na</span><span class="err">ble&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;e</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;mode&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">o</span><span class="kc">tes</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;projec</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;lerobo</span><span class="kc">t</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">           </span><span class="err">&#39;ru</span><span class="kc">n</span><span class="err">_id&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">No</span><span class="kc">ne</span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>INFO 2026-08-02 15:43:39 ot_train.py:280 Logs will be saved locally.
+INFO 2026-08-02 15:43:39 ot_train.py:298 Creating dataset
+
+INFO 2026-08-02 15:43:39 ot_train.py:324 Creating policy
+INFO 2026-08-02 15:43:40 ot_train.py:402 Creating optimizer and scheduler
+INFO 2026-08-02 15:43:40 ot_train.py:434 Output dir: outputs/train/pap_green_foam_in_box-v3
+INFO 2026-08-02 15:43:40 ot_train.py:441 cfg.steps=20000 (20K)
+INFO 2026-08-02 15:43:40 ot_train.py:442 dataset.num_frames=71471 (71K)
+INFO 2026-08-02 15:43:40 ot_train.py:443 dataset.num_episodes=52
+INFO 2026-08-02 15:43:40 ot_train.py:446 Effective batch size: 8 x 1 = 8
+INFO 2026-08-02 15:43:40 ot_train.py:447 num_learnable_params=51597190 (52M)
+INFO 2026-08-02 15:43:40 ot_train.py:448 num_total_params=51597190 (52M)
+</code></pre></div>
+<h4 id="training-sequence"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/#training-sequence">Training sequence</a></h4>
+<div class="highlight"><pre><span></span><code>Training:   0% 0/20000 [00:00&lt;?, ?step/s]INFO 2026-08-02 15:43:40 ot_train.py:597 Start offline training on a fixed dataset, with effective batch size: 8
+Training:   1% 200/20000 [02:32&lt;3:13:45,  1.70step/s]INFO 2026-08-02 15:46:13 ot_train.py:641 step:200 smpl:2K ep:1 epch:0.02 loss:7.175 grdn:161.603 lr:1.0e-05 updt_s:0.565 data_s:0.196 smp/s:11 mem_gb:3.74 l1_loss:0.588 kld_loss:0.659
+Training:   2% 400/20000 [04:36&lt;3:21:29,  1.62step/s]INFO 2026-08-02 15:48:17 ot_train.py:641 step:400 smpl:3K ep:2 epch:0.04 loss:3.060 grdn:91.839 lr:1.0e-05 updt_s:0.613 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.437 kld_loss:0.262
+Training:   3% 600/20000 [06:38&lt;3:17:39,  1.64step/s]INFO 2026-08-02 15:50:19 ot_train.py:641 step:600 smpl:5K ep:3 epch:0.07 loss:2.543 grdn:78.814 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.388 kld_loss:0.215
+Training:   4% 800/20000 [08:40&lt;3:17:13,  1.62step/s]INFO 2026-08-02 15:52:21 ot_train.py:641 step:800 smpl:6K ep:5 epch:0.09 loss:2.257 grdn:73.184 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.366 kld_loss:0.189
+Training:   5% 1000/20000 [10:43&lt;3:13:31,  1.64step/s]INFO 2026-08-02 15:54:24 ot_train.py:641 step:1K smpl:8K ep:6 epch:0.11 loss:2.029 grdn:68.419 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.346 kld_loss:0.168
+
+INFO 2026-08-02 15:54:24 ot_train.py:687 Checkpoint policy after step 1000
+Training:   6% 1200/20000 [13:06&lt;3:12:02,  1.63step/s]INFO 2026-08-02 15:56:47 ot_train.py:641 step:1K smpl:10K ep:7 epch:0.13 loss:1.824 grdn:63.236 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.323 kld_loss:0.150
+Training:   7% 1400/20000 [15:08&lt;3:10:57,  1.62step/s]INFO 2026-08-02 15:58:49 ot_train.py:641 step:1K smpl:11K ep:8 epch:0.16 loss:1.687 grdn:60.667 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.301 kld_loss:0.139
+Training:   8% 1600/20000 [17:10&lt;3:06:24,  1.65step/s]INFO 2026-08-02 16:00:51 ot_train.py:641 step:2K smpl:13K ep:9 epch:0.18 loss:1.528 grdn:56.952 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.294 kld_loss:0.123
+Training:   9% 1800/20000 [19:12&lt;3:05:44,  1.63step/s]INFO 2026-08-02 16:02:53 ot_train.py:641 step:2K smpl:14K ep:10 epch:0.20 loss:1.399 grdn:53.269 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.292 kld_loss:0.111
+Training:  10% 2000/20000 [21:15&lt;3:03:35,  1.63step/s]INFO 2026-08-02 16:04:56 ot_train.py:641 step:2K smpl:16K ep:12 epch:0.22 loss:1.287 grdn:51.856 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.284 kld_loss:0.100
+
+INFO 2026-08-02 16:04:56 ot_train.py:687 Checkpoint policy after step 2000
+Training:  11% 2200/20000 [23:39&lt;3:04:28,  1.61step/s]INFO 2026-08-02 16:07:20 ot_train.py:641 step:2K smpl:18K ep:13 epch:0.25 loss:1.167 grdn:48.010 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.279 kld_loss:0.089
+Training:  12% 2400/20000 [25:42&lt;3:01:08,  1.62step/s]INFO 2026-08-02 16:09:23 ot_train.py:641 step:2K smpl:19K ep:14 epch:0.27 loss:1.070 grdn:46.834 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.273 kld_loss:0.080
+Training:  13% 2600/20000 [27:44&lt;2:57:41,  1.63step/s]INFO 2026-08-02 16:11:25 ot_train.py:641 step:3K smpl:21K ep:15 epch:0.29 loss:0.962 grdn:43.641 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.262 kld_loss:0.070
+Training:  14% 2800/20000 [29:47&lt;2:55:00,  1.64step/s]INFO 2026-08-02 16:13:28 ot_train.py:641 step:3K smpl:22K ep:16 epch:0.31 loss:0.896 grdn:41.677 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.264 kld_loss:0.063
+Training:  15% 3000/20000 [31:49&lt;2:53:03,  1.64step/s]INFO 2026-08-02 16:15:30 ot_train.py:641 step:3K smpl:24K ep:17 epch:0.34 loss:0.809 grdn:39.580 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.257 kld_loss:0.055
+
+INFO 2026-08-02 16:15:30 ot_train.py:687 Checkpoint policy after step 3000
+Training:  16% 3200/20000 [34:21&lt;2:54:12,  1.61step/s]INFO 2026-08-02 16:18:02 ot_train.py:641 step:3K smpl:26K ep:19 epch:0.36 loss:0.743 grdn:37.976 lr:1.0e-05 updt_s:0.612 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.245 kld_loss:0.050
+Training:  17% 3400/20000 [36:24&lt;2:48:54,  1.64step/s]INFO 2026-08-02 16:20:05 ot_train.py:641 step:3K smpl:27K ep:20 epch:0.38 loss:0.671 grdn:35.022 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.236 kld_loss:0.044
+Training:  18% 3600/20000 [38:26&lt;2:47:04,  1.64step/s]INFO 2026-08-02 16:22:07 ot_train.py:641 step:4K smpl:29K ep:21 epch:0.40 loss:0.627 grdn:34.279 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.230 kld_loss:0.040
+Training:  19% 3800/20000 [40:28&lt;2:44:47,  1.64step/s]INFO 2026-08-02 16:24:09 ot_train.py:641 step:4K smpl:30K ep:22 epch:0.43 loss:0.575 grdn:32.625 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.225 kld_loss:0.035
+Training:  20% 4000/20000 [42:31&lt;2:44:45,  1.62step/s]INFO 2026-08-02 16:26:12 ot_train.py:641 step:4K smpl:32K ep:23 epch:0.45 loss:0.535 grdn:30.652 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.223 kld_loss:0.031
+
+INFO 2026-08-02 16:26:12 ot_train.py:687 Checkpoint policy after step 4000
+Training:  21% 4200/20000 [44:54&lt;2:43:09,  1.61step/s]INFO 2026-08-02 16:28:35 ot_train.py:641 step:4K smpl:34K ep:24 epch:0.47 loss:0.493 grdn:28.584 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.212 kld_loss:0.028
+Training:  22% 4400/20000 [46:57&lt;2:38:42,  1.64step/s]INFO 2026-08-02 16:30:38 ot_train.py:641 step:4K smpl:35K ep:26 epch:0.49 loss:0.470 grdn:28.426 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.213 kld_loss:0.026
+Training:  23% 4600/20000 [49:00&lt;2:36:51,  1.64step/s]INFO 2026-08-02 16:32:41 ot_train.py:641 step:5K smpl:37K ep:27 epch:0.51 loss:0.441 grdn:27.257 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.211 kld_loss:0.023
+Training:  24% 4800/20000 [51:02&lt;2:36:13,  1.62step/s]INFO 2026-08-02 16:34:43 ot_train.py:641 step:5K smpl:38K ep:28 epch:0.54 loss:0.413 grdn:25.866 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.203 kld_loss:0.021
+Training:  25% 5000/20000 [53:04&lt;2:34:19,  1.62step/s]INFO 2026-08-02 16:36:45 ot_train.py:641 step:5K smpl:40K ep:29 epch:0.56 loss:0.391 grdn:25.303 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.202 kld_loss:0.019
+
+INFO 2026-08-02 16:36:45 ot_train.py:687 Checkpoint policy after step 5000
+Training:  26% 5200/20000 [55:38&lt;2:31:45,  1.63step/s]INFO 2026-08-02 16:39:19 ot_train.py:641 step:5K smpl:42K ep:30 epch:0.58 loss:0.374 grdn:24.231 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.200 kld_loss:0.017
+Training:  27% 5400/20000 [57:41&lt;2:28:17,  1.64step/s]INFO 2026-08-02 16:41:22 ot_train.py:641 step:5K smpl:43K ep:31 epch:0.60 loss:0.361 grdn:24.277 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.199 kld_loss:0.016
+Training:  28% 5600/20000 [59:44&lt;2:26:17,  1.64step/s]INFO 2026-08-02 16:43:25 ot_train.py:641 step:6K smpl:45K ep:33 epch:0.63 loss:0.342 grdn:22.972 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.195 kld_loss:0.015
+Training:  29% 5800/20000 [1:01:46&lt;2:26:32,  1.62step/s]INFO 2026-08-02 16:45:27 ot_train.py:641 step:6K smpl:46K ep:34 epch:0.65 loss:0.331 grdn:22.369 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.194 kld_loss:0.014
+Training:  30% 6000/20000 [1:03:48&lt;2:22:42,  1.64step/s]INFO 2026-08-02 16:47:29 ot_train.py:641 step:6K smpl:48K ep:35 epch:0.67 loss:0.317 grdn:21.770 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.187 kld_loss:0.013
+
+INFO 2026-08-02 16:47:29 ot_train.py:687 Checkpoint policy after step 6000
+Training:  31% 6200/20000 [1:06:29&lt;2:24:26,  1.59step/s]INFO 2026-08-02 16:50:10 ot_train.py:641 step:6K smpl:50K ep:36 epch:0.69 loss:0.304 grdn:21.354 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.183 kld_loss:0.012
+Training:  32% 6400/20000 [1:08:31&lt;2:17:28,  1.65step/s]INFO 2026-08-02 16:52:12 ot_train.py:641 step:6K smpl:51K ep:37 epch:0.72 loss:0.296 grdn:20.537 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.182 kld_loss:0.011
+Training:  33% 6600/20000 [1:10:34&lt;2:15:14,  1.65step/s]INFO 2026-08-02 16:54:15 ot_train.py:641 step:7K smpl:53K ep:38 epch:0.74 loss:0.286 grdn:20.440 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.178 kld_loss:0.011
+Training:  34% 6800/20000 [1:12:36&lt;2:15:03,  1.63step/s]INFO 2026-08-02 16:56:17 ot_train.py:641 step:7K smpl:54K ep:40 epch:0.76 loss:0.275 grdn:19.839 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.176 kld_loss:0.010
+Training:  35% 7000/20000 [1:14:39&lt;2:13:58,  1.62step/s]INFO 2026-08-02 16:58:20 ot_train.py:641 step:7K smpl:56K ep:41 epch:0.78 loss:0.271 grdn:19.493 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.177 kld_loss:0.009
+
+INFO 2026-08-02 16:58:20 ot_train.py:687 Checkpoint policy after step 7000
+Training:  36% 7200/20000 [1:17:42&lt;2:10:16,  1.64step/s]INFO 2026-08-02 17:01:23 ot_train.py:641 step:7K smpl:58K ep:42 epch:0.81 loss:0.260 grdn:18.889 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.170 kld_loss:0.009
+Training:  37% 7400/20000 [1:19:44&lt;2:08:51,  1.63step/s]INFO 2026-08-02 17:03:25 ot_train.py:641 step:7K smpl:59K ep:43 epch:0.83 loss:0.256 grdn:18.510 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.171 kld_loss:0.009
+Training:  38% 7600/20000 [1:21:47&lt;2:05:27,  1.65step/s]INFO 2026-08-02 17:05:28 ot_train.py:641 step:8K smpl:61K ep:44 epch:0.85 loss:0.248 grdn:18.653 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.166 kld_loss:0.008
+Training:  39% 7800/20000 [1:23:49&lt;2:04:07,  1.64step/s]INFO 2026-08-02 17:07:30 ot_train.py:641 step:8K smpl:62K ep:45 epch:0.87 loss:0.245 grdn:18.155 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.169 kld_loss:0.008
+Training:  40% 8000/20000 [1:25:51&lt;2:01:35,  1.64step/s]INFO 2026-08-02 17:09:32 ot_train.py:641 step:8K smpl:64K ep:47 epch:0.90 loss:0.239 grdn:17.804 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.167 kld_loss:0.007
+
+INFO 2026-08-02 17:09:32 ot_train.py:687 Checkpoint policy after step 8000
+Training:  41% 8200/20000 [1:28:46&lt;2:00:23,  1.63step/s]INFO 2026-08-02 17:12:27 ot_train.py:641 step:8K smpl:66K ep:48 epch:0.92 loss:0.235 grdn:17.356 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.167 kld_loss:0.007
+Training:  42% 8400/20000 [1:30:48&lt;1:57:18,  1.65step/s]INFO 2026-08-02 17:14:29 ot_train.py:641 step:8K smpl:67K ep:49 epch:0.94 loss:0.226 grdn:16.822 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.161 kld_loss:0.007
+Training:  43% 8600/20000 [1:32:50&lt;1:55:41,  1.64step/s]INFO 2026-08-02 17:16:31 ot_train.py:641 step:9K smpl:69K ep:50 epch:0.96 loss:0.223 grdn:16.357 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.160 kld_loss:0.006
+Training:  44% 8800/20000 [1:34:52&lt;1:53:23,  1.65step/s]INFO 2026-08-02 17:18:33 ot_train.py:641 step:9K smpl:70K ep:51 epch:0.99 loss:0.223 grdn:16.598 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.163 kld_loss:0.006
+Training:  45% 9000/20000 [1:37:00&lt;1:53:39,  1.61step/s]INFO 2026-08-02 17:20:41 ot_train.py:641 step:9K smpl:72K ep:52 epch:1.01 loss:0.215 grdn:16.342 lr:1.0e-05 updt_s:0.630 data_s:0.006 smp/s:13 mem_gb:3.74 l1_loss:0.156 kld_loss:0.006
+
+INFO 2026-08-02 17:20:41 ot_train.py:687 Checkpoint policy after step 9000
+Training:  46% 9200/20000 [1:39:41&lt;1:51:34,  1.61step/s]INFO 2026-08-02 17:23:22 ot_train.py:641 step:9K smpl:74K ep:54 epch:1.03 loss:0.210 grdn:15.934 lr:1.0e-05 updt_s:0.612 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.154 kld_loss:0.006
+Training:  47% 9400/20000 [1:41:44&lt;1:49:02,  1.62step/s]INFO 2026-08-02 17:25:25 ot_train.py:641 step:9K smpl:75K ep:55 epch:1.05 loss:0.211 grdn:15.935 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.158 kld_loss:0.005
+Training:  48% 9600/20000 [1:43:46&lt;1:45:59,  1.64step/s]INFO 2026-08-02 17:27:27 ot_train.py:641 step:10K smpl:77K ep:56 epch:1.07 loss:0.206 grdn:15.339 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.154 kld_loss:0.005
+Training:  49% 9800/20000 [1:45:48&lt;1:42:31,  1.66step/s]INFO 2026-08-02 17:29:29 ot_train.py:641 step:10K smpl:78K ep:57 epch:1.10 loss:0.199 grdn:15.211 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.150 kld_loss:0.005
+Training:  50% 10000/20000 [1:47:51&lt;1:42:12,  1.63step/s]INFO 2026-08-02 17:31:32 ot_train.py:641 step:10K smpl:80K ep:58 epch:1.12 loss:0.194 grdn:14.792 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.146 kld_loss:0.005
+
+INFO 2026-08-02 17:31:32 ot_train.py:687 Checkpoint policy after step 10000
+Training:  51% 10200/20000 [1:50:45&lt;1:41:02,  1.62step/s]INFO 2026-08-02 17:34:26 ot_train.py:641 step:10K smpl:82K ep:59 epch:1.14 loss:0.195 grdn:15.066 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.149 kld_loss:0.005
+Training:  52% 10400/20000 [1:52:47&lt;1:37:54,  1.63step/s]INFO 2026-08-02 17:36:28 ot_train.py:641 step:10K smpl:83K ep:61 epch:1.16 loss:0.191 grdn:15.118 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.145 kld_loss:0.005
+Training:  53% 10600/20000 [1:54:50&lt;1:35:17,  1.64step/s]INFO 2026-08-02 17:38:31 ot_train.py:641 step:11K smpl:85K ep:62 epch:1.19 loss:0.187 grdn:14.481 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.145 kld_loss:0.004
+Training:  54% 10800/20000 [1:56:52&lt;1:32:57,  1.65step/s]INFO 2026-08-02 17:40:33 ot_train.py:641 step:11K smpl:86K ep:63 epch:1.21 loss:0.189 grdn:14.140 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.147 kld_loss:0.004
+Training:  55% 11000/20000 [1:58:55&lt;1:31:42,  1.64step/s]INFO 2026-08-02 17:42:36 ot_train.py:641 step:11K smpl:88K ep:64 epch:1.23 loss:0.185 grdn:14.046 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.146 kld_loss:0.004
+
+INFO 2026-08-02 17:42:36 ot_train.py:687 Checkpoint policy after step 11000
+Training:  56% 11200/20000 [2:01:41&lt;1:30:45,  1.62step/s]INFO 2026-08-02 17:45:22 ot_train.py:641 step:11K smpl:90K ep:65 epch:1.25 loss:0.182 grdn:13.792 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.144 kld_loss:0.004
+Training:  57% 11400/20000 [2:03:43&lt;1:28:56,  1.61step/s]INFO 2026-08-02 17:47:24 ot_train.py:641 step:11K smpl:91K ep:66 epch:1.28 loss:0.182 grdn:13.991 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.143 kld_loss:0.004
+Training:  58% 11600/20000 [2:05:46&lt;1:26:41,  1.61step/s]INFO 2026-08-02 17:49:27 ot_train.py:641 step:12K smpl:93K ep:68 epch:1.30 loss:0.180 grdn:13.345 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.144 kld_loss:0.004
+Training:  59% 11800/20000 [2:07:48&lt;1:24:06,  1.62step/s]INFO 2026-08-02 17:51:29 ot_train.py:641 step:12K smpl:94K ep:69 epch:1.32 loss:0.177 grdn:13.397 lr:1.0e-05 updt_s:0.605 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.142 kld_loss:0.003
+Training:  60% 12000/20000 [2:09:50&lt;1:21:56,  1.63step/s]INFO 2026-08-02 17:53:31 ot_train.py:641 step:12K smpl:96K ep:70 epch:1.34 loss:0.178 grdn:13.211 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.144 kld_loss:0.003
+
+INFO 2026-08-02 17:53:31 ot_train.py:687 Checkpoint policy after step 12000
+Training:  61% 12200/20000 [2:12:56&lt;1:19:32,  1.63step/s]INFO 2026-08-02 17:56:37 ot_train.py:641 step:12K smpl:98K ep:71 epch:1.37 loss:0.173 grdn:13.086 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.141 kld_loss:0.003
+Training:  62% 12400/20000 [2:14:58&lt;1:17:33,  1.63step/s]INFO 2026-08-02 17:58:39 ot_train.py:641 step:12K smpl:99K ep:72 epch:1.39 loss:0.171 grdn:13.179 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.139 kld_loss:0.003
+Training:  63% 12600/20000 [2:17:01&lt;1:15:06,  1.64step/s]INFO 2026-08-02 18:00:41 ot_train.py:641 step:13K smpl:101K ep:73 epch:1.41 loss:0.169 grdn:12.581 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.139 kld_loss:0.003
+Training:  64% 12800/20000 [2:19:04&lt;1:13:14,  1.64step/s]INFO 2026-08-02 18:02:45 ot_train.py:641 step:13K smpl:102K ep:75 epch:1.43 loss:0.164 grdn:12.475 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.134 kld_loss:0.003
+Training:  65% 13000/20000 [2:21:06&lt;1:11:47,  1.62step/s]INFO 2026-08-02 18:04:47 ot_train.py:641 step:13K smpl:104K ep:76 epch:1.46 loss:0.171 grdn:12.681 lr:1.0e-05 updt_s:0.605 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.143 kld_loss:0.003
+
+INFO 2026-08-02 18:04:47 ot_train.py:687 Checkpoint policy after step 13000
+Training:  66% 13200/20000 [2:24:11&lt;1:09:46,  1.62step/s]INFO 2026-08-02 18:07:52 ot_train.py:641 step:13K smpl:106K ep:77 epch:1.48 loss:0.167 grdn:12.538 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.139 kld_loss:0.003
+Training:  67% 13400/20000 [2:26:14&lt;1:07:50,  1.62step/s]INFO 2026-08-02 18:09:55 ot_train.py:641 step:13K smpl:107K ep:78 epch:1.50 loss:0.163 grdn:12.360 lr:1.0e-05 updt_s:0.610 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.136 kld_loss:0.003
+Training:  68% 13600/20000 [2:28:15&lt;1:05:44,  1.62step/s]INFO 2026-08-02 18:11:56 ot_train.py:641 step:14K smpl:109K ep:79 epch:1.52 loss:0.162 grdn:11.997 lr:1.0e-05 updt_s:0.605 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.136 kld_loss:0.003
+Training:  69% 13800/20000 [2:30:18&lt;1:03:23,  1.63step/s]INFO 2026-08-02 18:13:59 ot_train.py:641 step:14K smpl:110K ep:80 epch:1.54 loss:0.160 grdn:12.189 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.134 kld_loss:0.003
+Training:  70% 14000/20000 [2:32:21&lt;1:00:41,  1.65step/s]INFO 2026-08-02 18:16:01 ot_train.py:641 step:14K smpl:112K ep:81 epch:1.57 loss:0.154 grdn:11.350 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.130 kld_loss:0.002
+
+INFO 2026-08-02 18:16:01 ot_train.py:687 Checkpoint policy after step 14000
+Training:  71% 14200/20000 [2:35:12&lt;59:11,  1.63step/s]INFO 2026-08-02 18:18:53 ot_train.py:641 step:14K smpl:114K ep:83 epch:1.59 loss:0.161 grdn:11.771 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.137 kld_loss:0.002
+Training:  72% 14400/20000 [2:37:14&lt;56:55,  1.64step/s]INFO 2026-08-02 18:20:55 ot_train.py:641 step:14K smpl:115K ep:84 epch:1.61 loss:0.156 grdn:11.713 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.133 kld_loss:0.002
+Training:  73% 14600/20000 [2:39:17&lt;55:17,  1.63step/s]INFO 2026-08-02 18:22:58 ot_train.py:641 step:15K smpl:117K ep:85 epch:1.63 loss:0.156 grdn:11.206 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.134 kld_loss:0.002
+Training:  74% 14800/20000 [2:41:20&lt;53:05,  1.63step/s]INFO 2026-08-02 18:25:01 ot_train.py:641 step:15K smpl:118K ep:86 epch:1.66 loss:0.152 grdn:11.322 lr:1.0e-05 updt_s:0.611 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.131 kld_loss:0.002
+Training:  75% 15000/20000 [2:43:23&lt;50:50,  1.64step/s]INFO 2026-08-02 18:27:04 ot_train.py:641 step:15K smpl:120K ep:87 epch:1.68 loss:0.150 grdn:11.391 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.128 kld_loss:0.002
+
+INFO 2026-08-02 18:27:04 ot_train.py:687 Checkpoint policy after step 15000
+Training:  76% 15200/20000 [2:46:30&lt;48:43,  1.64step/s]INFO 2026-08-02 18:30:11 ot_train.py:641 step:15K smpl:122K ep:88 epch:1.70 loss:0.151 grdn:11.165 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.130 kld_loss:0.002
+Training:  77% 15400/20000 [2:48:32&lt;46:33,  1.65step/s]INFO 2026-08-02 18:32:13 ot_train.py:641 step:15K smpl:123K ep:90 epch:1.72 loss:0.147 grdn:10.896 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.127 kld_loss:0.002
+Training:  78% 15600/20000 [2:50:34&lt;44:59,  1.63step/s]INFO 2026-08-02 18:34:15 ot_train.py:641 step:16K smpl:125K ep:91 epch:1.75 loss:0.150 grdn:11.130 lr:1.0e-05 updt_s:0.605 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.130 kld_loss:0.002
+Training:  79% 15800/20000 [2:52:36&lt;42:53,  1.63step/s]INFO 2026-08-02 18:36:17 ot_train.py:641 step:16K smpl:126K ep:92 epch:1.77 loss:0.147 grdn:10.937 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.128 kld_loss:0.002
+Training:  80% 16000/20000 [2:54:38&lt;40:41,  1.64step/s]INFO 2026-08-02 18:38:19 ot_train.py:641 step:16K smpl:128K ep:93 epch:1.79 loss:0.148 grdn:10.847 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.129 kld_loss:0.002
+
+INFO 2026-08-02 18:38:19 ot_train.py:687 Checkpoint policy after step 16000
+Training:  81% 16200/20000 [2:57:42&lt;38:51,  1.63step/s]INFO 2026-08-02 18:41:23 ot_train.py:641 step:16K smpl:130K ep:94 epch:1.81 loss:0.146 grdn:10.500 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.129 kld_loss:0.002
+Training:  82% 16400/20000 [2:59:45&lt;36:40,  1.64step/s]INFO 2026-08-02 18:43:26 ot_train.py:641 step:16K smpl:131K ep:95 epch:1.84 loss:0.144 grdn:10.622 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.126 kld_loss:0.002
+Training:  83% 16600/20000 [3:01:47&lt;34:34,  1.64step/s]INFO 2026-08-02 18:45:28 ot_train.py:641 step:17K smpl:133K ep:97 epch:1.86 loss:0.144 grdn:10.339 lr:1.0e-05 updt_s:0.609 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.127 kld_loss:0.002
+Training:  84% 16800/20000 [3:03:50&lt;32:36,  1.64step/s]INFO 2026-08-02 18:47:30 ot_train.py:641 step:17K smpl:134K ep:98 epch:1.88 loss:0.143 grdn:9.959 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.127 kld_loss:0.002
+Training:  85% 17000/20000 [3:05:52&lt;30:40,  1.63step/s]INFO 2026-08-02 18:49:33 ot_train.py:641 step:17K smpl:136K ep:99 epch:1.90 loss:0.141 grdn:10.061 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.126 kld_loss:0.002
+
+INFO 2026-08-02 18:49:33 ot_train.py:687 Checkpoint policy after step 17000
+Training:  86% 17200/20000 [3:08:35&lt;28:24,  1.64step/s]INFO 2026-08-02 18:52:16 ot_train.py:641 step:17K smpl:138K ep:100 epch:1.93 loss:0.141 grdn:9.943 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.125 kld_loss:0.002
+Training:  87% 17400/20000 [3:10:37&lt;26:18,  1.65step/s]INFO 2026-08-02 18:54:18 ot_train.py:641 step:17K smpl:139K ep:101 epch:1.95 loss:0.140 grdn:9.907 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.125 kld_loss:0.001
+Training:  88% 17600/20000 [3:12:39&lt;24:20,  1.64step/s]INFO 2026-08-02 18:56:20 ot_train.py:641 step:18K smpl:141K ep:102 epch:1.97 loss:0.134 grdn:9.872 lr:1.0e-05 updt_s:0.604 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.119 kld_loss:0.001
+Training:  89% 17800/20000 [3:14:41&lt;22:19,  1.64step/s]INFO 2026-08-02 18:58:22 ot_train.py:641 step:18K smpl:142K ep:104 epch:1.99 loss:0.137 grdn:9.966 lr:1.0e-05 updt_s:0.605 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.122 kld_loss:0.001
+Training:  90% 18000/20000 [3:16:43&lt;20:18,  1.64step/s]INFO 2026-08-02 19:00:24 ot_train.py:641 step:18K smpl:144K ep:105 epch:2.01 loss:0.137 grdn:9.923 lr:1.0e-05 updt_s:0.606 data_s:0.006 smp/s:13 mem_gb:3.73 l1_loss:0.123 kld_loss:0.001
+
+INFO 2026-08-02 19:00:24 ot_train.py:687 Checkpoint policy after step 18000
+Training:  91% 18200/20000 [3:19:44&lt;18:21,  1.63step/s]INFO 2026-08-02 19:03:25 ot_train.py:641 step:18K smpl:146K ep:106 epch:2.04 loss:0.133 grdn:9.578 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.120 kld_loss:0.001
+Training:  92% 18400/20000 [3:21:47&lt;16:11,  1.65step/s]INFO 2026-08-02 19:05:28 ot_train.py:641 step:18K smpl:147K ep:107 epch:2.06 loss:0.132 grdn:9.744 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.118 kld_loss:0.001
+Training:  93% 18600/20000 [3:23:49&lt;14:14,  1.64step/s]INFO 2026-08-02 19:07:30 ot_train.py:641 step:19K smpl:149K ep:108 epch:2.08 loss:0.133 grdn:9.548 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.120 kld_loss:0.001
+Training:  94% 18800/20000 [3:25:51&lt;12:09,  1.64step/s]INFO 2026-08-02 19:09:32 ot_train.py:641 step:19K smpl:150K ep:109 epch:2.10 loss:0.130 grdn:9.481 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.117 kld_loss:0.001
+Training:  95% 19000/20000 [3:27:53&lt;10:07,  1.65step/s]INFO 2026-08-02 19:11:34 ot_train.py:641 step:19K smpl:152K ep:111 epch:2.13 loss:0.133 grdn:9.535 lr:1.0e-05 updt_s:0.604 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.120 kld_loss:0.001
+
+INFO 2026-08-02 19:11:34 ot_train.py:687 Checkpoint policy after step 19000
+Training:  96% 19200/20000 [3:30:46&lt;08:05,  1.65step/s]INFO 2026-08-02 19:14:27 ot_train.py:641 step:19K smpl:154K ep:112 epch:2.15 loss:0.130 grdn:9.058 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.119 kld_loss:0.001
+Training:  97% 19400/20000 [3:32:48&lt;06:04,  1.65step/s]INFO 2026-08-02 19:16:29 ot_train.py:641 step:19K smpl:155K ep:113 epch:2.17 loss:0.133 grdn:9.486 lr:1.0e-05 updt_s:0.606 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.121 kld_loss:0.001
+Training:  98% 19600/20000 [3:34:50&lt;04:04,  1.63step/s]INFO 2026-08-02 19:18:31 ot_train.py:641 step:20K smpl:157K ep:114 epch:2.19 loss:0.129 grdn:8.901 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.118 kld_loss:0.001
+Training:  99% 19800/20000 [3:36:53&lt;02:02,  1.63step/s]INFO 2026-08-02 19:20:34 ot_train.py:641 step:20K smpl:158K ep:115 epch:2.22 loss:0.127 grdn:8.739 lr:1.0e-05 updt_s:0.608 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.117 kld_loss:0.001
+Training: 100% 20000/20000 [3:38:55&lt;00:00,  1.63step/s]INFO 2026-08-02 19:22:36 ot_train.py:641 step:20K smpl:160K ep:116 epch:2.24 loss:0.129 grdn:9.123 lr:1.0e-05 updt_s:0.607 data_s:0.003 smp/s:13 mem_gb:3.73 l1_loss:0.118 kld_loss:0.001
+
+INFO 2026-08-02 19:22:36 ot_train.py:687 Checkpoint policy after step 20000
+Training: 100% 20000/20000 [3:39:51&lt;00:00,  1.52step/s]
+
+INFO 2026-08-02 19:23:32 ot_train.py:770 End of training
+</code></pre></div>
+<h3 id="policy"><a class="toclink" href="2026/08/03/training-50-episodes-of-green-foam-in-box/#policy">Policy</a></h3>
+<p>INFO 2026-08-02 19:23:40 etrained.py:338 Model pushed to huggingface: <a href="https://huggingface.co/garagelab-duesseldorf/pap_green_foam_in_boxpolicy-v3">pap_green_foam_in_boxpolicy-v3</a></p>
+<hr />
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-07-20 00:00:00+00:00">July 20, 2026</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="minimum-camera-resolution-for-teleoperation"><a class="toclink" href="2026/07/20/minimum-camera-resolution-for-teleoperation/">Minimum Camera Resolution for Teleoperation</a></h2>
+<p>Test-Szenario:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Users/lerobot/repos/ernie-und-bert/scripts
+<span class="c1"># or</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$repo_ernie</span>/scripts
+<span class="c1"># camera settings are hard-coded in `init.cameras.sh` for this test, so we need to checkout the branch that contains the changes.</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test/minimum-cam-resolution
+
+<span class="c1"># run the teleoperation script</span>
+./run_a_teleoperation.sh
+</code></pre></div>
+<p>Auflösung der Kameras: 320x240 Pixel, 30 FPS</p>
+<p>Screenshot:</p>
+<p><img alt="screenshot rerun app" src="https://garagelab-dus.github.io/protolab-robo-docs/blog/images/minimum-cam-resolution-1.png" /></p>
+<details class="- info">
+<summary>Teleop loop time: 33.34ms (30 Hz)</summary>
+<div class="highlight"><pre><span></span><code>(lerobot) lerobot@MacBook scripts % ./run_a_teleoperation.sh 
+robot_cameras2: { front: { type: opencv, index_or_path: 0, width: 320, height: 240, fps: 30 }, wrist: { type: opencv, index_or_path: 1, width: 320, height: 240, fps: 30 }}
+Press ENTER to continue or any other key to abort.
+objc[6105]: Class AVFFrameReceiver is implemented in both /Users/lerobot/.conda/envs/robot/lib/python3.12/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1039b03a8) and /Users/lerobot/.conda/envs/robot/lib/python3.12/site-packages/av/.dylibs/libavdevice.61.3.100.dylib (0x11bed43a8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[6105]: Class AVFAudioReceiver is implemented in both /Users/lerobot/.conda/envs/robot/lib/python3.12/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1039b03f8) and /Users/lerobot/.conda/envs/robot/lib/python3.12/site-packages/av/.dylibs/libavdevice.61.3.100.dylib (0x11bed43f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+INFO 2026-07-20 21:21:07 eoperate.py:211 {&#39;display_compressed_images&#39;: False,
+ &#39;display_data&#39;: True,
+ &#39;display_ip&#39;: None,
+ &#39;display_port&#39;: None,
+ &#39;fps&#39;: 30,
+ &#39;robot&#39;: {&#39;calibration_dir&#39;: None,
+           &#39;cameras&#39;: {&#39;front&#39;: {&#39;backend&#39;: &lt;Cv2Backends.ANY: 0&gt;,
+                                 &#39;color_mode&#39;: &lt;ColorMode.RGB: &#39;rgb&#39;&gt;,
+                                 &#39;fourcc&#39;: None,
+                                 &#39;fps&#39;: 30,
+                                 &#39;height&#39;: 240,
+                                 &#39;index_or_path&#39;: 0,
+                                 &#39;rotation&#39;: &lt;Cv2Rotation.NO_ROTATION: 0&gt;,
+                                 &#39;warmup_s&#39;: 1,
+                                 &#39;width&#39;: 320},
+                       &#39;wrist&#39;: {&#39;backend&#39;: &lt;Cv2Backends.ANY: 0&gt;,
+                                 &#39;color_mode&#39;: &lt;ColorMode.RGB: &#39;rgb&#39;&gt;,
+                                 &#39;fourcc&#39;: None,
+                                 &#39;fps&#39;: 30,
+                                 &#39;height&#39;: 240,
+                                 &#39;index_or_path&#39;: 1,
+                                 &#39;rotation&#39;: &lt;Cv2Rotation.NO_ROTATION: 0&gt;,
+                                 &#39;warmup_s&#39;: 1,
+                                 &#39;width&#39;: 320}},
+           &#39;disable_torque_on_disconnect&#39;: True,
+           &#39;id&#39;: &#39;ernie&#39;,
+           &#39;max_relative_target&#39;: None,
+           &#39;port&#39;: &#39;/dev/tty.usbmodem5A680100061&#39;,
+           &#39;use_degrees&#39;: True},
+ &#39;teleop&#39;: {&#39;calibration_dir&#39;: None,
+            &#39;id&#39;: &#39;bert&#39;,
+            &#39;port&#39;: &#39;/dev/tty.usbmodem5A680100531&#39;,
+            &#39;use_degrees&#39;: True},
+ &#39;teleop_time_s&#39;: None}
+INFO 2026-07-20 21:21:08 so_leader.py:78 bert SOLeader connected.
+INFO 2026-07-20 21:21:11 a_opencv.py:179 OpenCVCamera(0) connected.
+INFO 2026-07-20 21:21:13 a_opencv.py:179 OpenCVCamera(1) connected.
+INFO 2026-07-20 21:21:14 follower.py:105 ernie SOFollower connected.
+Teleop loop time: 33.34ms (30 Hz)
+</code></pre></div>
+</details>
+<p>Die Auflösung von 320x240 Pixeln bei 30 FPS ist ausreichend für die Teleoperation. Die Bildqualität ist gut genug, um die Bewegungen des Roboters präzise zu steuern, ohne dass es zu Verzögerungen oder Ruckeln kommt.</p>
+<hr />
+<p>Für das Training von KI-Modellen kann eine andere Auflösung vielleicht notwendig sein. Aber der Rechenaufwand für das ACT Model ist bei 320x240 um ein Vielfaches kleiner.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-07-16 00:00:00+00:00">July 16, 2026</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="how-to-visualise-a-recording"><a class="toclink" href="2026/07/16/how-to-visualise-a-recording/">how to visualise a recording</a></h2>
+<div class="highlight"><pre><span></span><code>lerobot-dataset-viz<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--repo-id<span class="w"> </span>garagelab-duesseldorf/multi_episode<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--root<span class="w"> </span><span class="s2">&quot;/Users/lerobot/.cache/huggingface/lerobot/garagelab-duesseldorf/multi_episode&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--mode<span class="w"> </span><span class="nb">local</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--episode-index<span class="w"> </span><span class="m">3</span><span class="w"> </span>
+</code></pre></div>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-07-20 00:00:00+00:00">July 20, 2025</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="this-is-a-demo-post"><a class="toclink" href="2025/07/20/this-is-a-demo-post/">This is a demo post</a></h2>
+<p>This is the first line after the yaml header.</p>
+<p>Und so sieht der Header aus:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">demo</span><span class="nv"> </span><span class="s">post&quot;</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2025-07-20</span>
+<span class="nt">meta-data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta-value</span>
+<span class="nn">---</span>
+</code></pre></div>
+<hr />
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.top", "toc.follow", "content.code.select", "content.code.copy", "navigation.tabs", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
