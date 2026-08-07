@@ -20,7 +20,7 @@ Der Link zum [`Termin im Forum`](https://forum.garage-lab.de/t/roboterarm-worksh
 ---
 ## 2026-08-06
 
-Ernie hat sich mit dem trainierten Modell selbstständig bewegt. Dazu musste die „Async Inference“ Methode genutzt werden, bei der zwei Rechner über ein Netzwerk zusammenarbeiten. Grob gesagt wertet der eine die Policy aus und schickt die Daten an den anderen Rechner, der die Befehle für Ernie gibt. Hier der Link zur Methode: https://huggingface.co/docs/lerobot/main/en/async
+Ernie hat sich mit dem trainierten Modell selbstständig bewegt. Dazu musste die „Async Inference“ Methode genutzt werden, bei der zwei Rechner über ein Netzwerk zusammenarbeiten. Grob gesagt wertet der eine die Policy aus und schickt die Daten an den anderen Rechner, der die Befehle für Ernie gibt. ['Hier der Link zur Async Methode‘](https://huggingface.co/docs/lerobot/main/en/async).
 Die Bewegungen von Ernie waren zielgerichtet aber wirkten noch sehr „unbeholfen“. Wenn man ihm den Schwamm direkt vor die „Nase“ legt, erkennt er ihn und greift ihn. Er trägt ihn zur Box. Die Ablage in die Box funktioniert noch nicht. ToDo: wir brauchen mehr und bessere Trainingsdaten und eine störungsfreiere Trainingsumgebung. Aber das Prinzip funkioniert!
 
 ---
